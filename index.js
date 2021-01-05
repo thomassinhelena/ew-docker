@@ -13,7 +13,7 @@ process.on("SIGTERM", () => {
 
 const init = async () => {
   const app = express();
-  console.log("Connecting to MongoDB database");
+  console.log("Connecting to MongoDB");
   await mongoose.connect("mongodb://mongodb:27017/ew-docker", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
